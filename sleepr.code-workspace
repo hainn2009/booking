@@ -1,0 +1,14 @@
+{
+  "folders": [
+    {
+      "path": ".",
+    },
+    {
+      "path": "../sleepr-reference",
+    },
+  ],
+  "settings": {
+    "editor.formatOnSave": true,
+    "prettier.tabWidth": 4,
+  },
+}

@@ -17,7 +17,19 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./apps/sleepr/test/jest-e2e.json"
+    "test:e2e": "jest --config ./apps/sleepr/test/jest-e2e.json",
+    "build:auth": "nest build auth",
+    "build:notifications": "nest build notifications",
+    "build:payments": "nest build payments",
+    "build:reservations": "nest build reservations",
+    "start:dev:auth": "nest start auth --watch",
+    "start:dev:notifications": "nest start notifications --watch",
+    "start:dev:payments": "nest start payments --watch",
+    "start:dev:reservations": "nest start reservations --watch",
+    "start:prod:auth": "node dist/apps/auth/main",
+    "start:prod:notifications": "node dist/apps/notifications/main",
+    "start:prod:payments": "node dist/apps/payments/main",
+    "start:prod:reservations": "node dist/apps/reservations/main"
   },
   "dependencies": {
     "@nestjs/common": "^10.0.0",

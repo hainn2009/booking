@@ -37,6 +37,10 @@ export class ReservationsController {
       console.log(error);
     }
   }
+  @Get('/healthz')
+  async healthz() {
+    return { mesage: 'Healthy' };
+  }
 
   @Get()
   @UseGuards(JWTAuthGuard)
